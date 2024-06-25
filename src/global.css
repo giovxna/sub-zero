@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #0079BB;
+    --second-color: #009CCD;
+    --third-color: #00BBC4;
+    --fourth-color: #00D6A7;
+    --secondary-text-color: #666;
+    --background-color: #FAFAFA;
+    --text-color: #202020;
+    --box-shadow: -2px 0 4px hsla(159, 24%, 15%, 0.1);
+    --border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+border {
+    outline-color: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}

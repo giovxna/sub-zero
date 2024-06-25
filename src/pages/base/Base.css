@@ -1,0 +1,225 @@
+#page-base header {
+    background: var(--background-color);
+    padding: 20px 0;
+    box-shadow: var(--box-shadow);
+}
+
+#page-base header nav {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-base header nav .logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#page-base header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+#page-base eader nav ul li {
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+#page-base header nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#page-base header nav ul li a:hover {
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+
+#page-base .contact-section {
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#page-base .contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#page-base .contact-section .contact-text {
+    font-size: 16px;
+    margin-bottom: 50px;
+    color: var(--background-color);
+}
+
+#page-base .contact-section .contact-container {
+    background: var(--background-color);
+    padding: 60px;
+    margin-top: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow)
+}
+
+#page-base .contact-section .contact-container .contact-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#page-base .contact-section .contact-container .contact-content .contact-info {
+    width: 40%;
+    background: var(--primary-color);
+    color: var(--background-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#page-base .contact-section .contact-container .contact-content .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#page-base .contact-section .contact-container .contact-content .contact-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#page-base .contact-section .contact-container .contact-content .contact-form {
+    width: 58%;
+    padding: 30px;
+}
+
+#page-base .contact-section .contact-container .contact-content .contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#page-base .contact-section .contact-container .contact-content .contact-form form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    text-align: left;
+    display: block;
+}
+
+#page-base .contact-section .contact-container .contact-content .contact-form form input,
+select {
+    font-size: 14px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#page-base .contact-section .contact-container .contact-content .contact-form form input:focus,
+#page-base .contact-section .contact-container .contact-content .contact-form form input:hover,
+#page-base .contact-section .contact-container .contact-content .contact-form form select:focus,
+#page-base .contact-section .contact-container .contact-content .contact-form form select:hover {
+    border: 0.1rem solid var(--primary-color);
+    outline: 0;
+    transition: 0.5s;
+}
+
+#page-base .contact-section .contact-container .contact-content .contact-form form input:disabled {
+    opacity: 0.35;
+}
+
+#page-base .contact-section .contact-container .contact-content .contact-form form button {
+    padding: 15px 20px;
+    border: none;
+    background: var(--primary-color);
+    color: var(--background-color);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#page-base .contact-section .contact-container .contact-content .contact-form form button:hover {
+    background-color: #11608a;
+    transition: 0.5s;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"] {
+    color: var(--secondary-text-color);
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+select#query_splunk {
+    color: var(--secondary-text-color);
+}
+
+@media (max-width: 768px) {
+    #page-base header nav {
+        flex-direction: column;
+    }
+
+    #page-base header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #page-base header nav ul li {
+        margin: 10px 0;
+    }
+
+    #page-base .contact-section {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #page-base .contact-section h1 {
+        font-size: 32px;
+    }
+
+    #page-base .contact-section p {
+        font-size: 14px;
+    }
+
+    #page-base .contact-section .contact-container {
+        padding: 30px;
+    }
+
+    #page-base .contact-section .contact-container .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #page-base .contact-section .contact-container .contact-content .contact-info,
+    #page-base .contact-section .contact-container .contact-content .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #page-base .contact-section h1 {
+        font-size: 28px;
+    }
+
+    #page-base .contact-section p {
+        font-size: 14px;
+    }
+
+    #page-base .contact-section .contact-container {
+        padding: 20px;
+    }
+
+    #page-base .contact-section .contact-container .contact-form input {
+        font-size: 12px;
+    }
+
+    #page-base .contact-section .contact-container .contact-form button {
+        font-size: 14px;
+    }
+}
